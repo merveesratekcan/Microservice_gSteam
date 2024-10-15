@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "JF8XvLlQWuU=",
+  "dgSpecHash": "6ArMBiuNaMQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\esram\\Desktop\\Microservice_gSteam\\src\\GameService\\GameService.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\esram\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\esram\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\esram\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\esram\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.18\\microsoft.aspnetcore.openapi.7.0.18.nupkg.sha512",
+    "C:\\Users\\esram\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\esram\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.20\\microsoft.entityframeworkcore.7.0.20.nupkg.sha512",
     "C:\\Users\\esram\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.20\\microsoft.entityframeworkcore.abstractions.7.0.20.nupkg.sha512",
     "C:\\Users\\esram\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.20\\microsoft.entityframeworkcore.analyzers.7.0.20.nupkg.sha512",
@@ -39,7 +42,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "'System.Text.Json' 7.0.3 paketinde önem derecesi yüksek olan bilinen bir https://github.com/advisories/GHSA-hh2w-p6rv-4g7w güvenlik açığı var",
+      "message": "Package 'System.Text.Json' 7.0.3 has a known high severity vulnerability, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w",
       "libraryId": "System.Text.Json",
       "targetGraphs": [
         "net7.0"

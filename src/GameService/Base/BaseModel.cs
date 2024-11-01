@@ -5,7 +5,7 @@ public abstract class BaseModel
    public BaseModel(){
 
    Id=Guid.NewGuid();
-   CreatedDate=DateTime.Now;
+   CreatedDate=DateTime.UtcNow;
    
    }
     public Guid Id { get; set; }

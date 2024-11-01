@@ -45,3 +45,5 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\Mono
 C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\System.CodeDom.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\Npgsql.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

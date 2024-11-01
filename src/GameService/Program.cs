@@ -1,4 +1,7 @@
+using GameService.Base;
 using GameService.Data;
+using GameService.Repositories;
+using GameService.Repositories.ForCategory;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -11,6 +14,10 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<GameDbContext>(options =>{
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+builder.Services.AddScoped(typeof(BaseResponseModel));
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IGameRepository, GameRepository>();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddEndpointsApiExplorer();

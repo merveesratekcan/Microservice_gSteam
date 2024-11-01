@@ -1,4 +1,6 @@
 using AutoMapper;
+using GameService.DTOs;
+using GameService.Entities;
 
 namespace GameService.MappingProfile;
 
@@ -6,7 +8,7 @@ namespace GameService.MappingProfile;
     {
         public BaseMapper()
         {
-            
+            CreateMap<Category, CategoryDTO>().ReverseMap();
         }
         
     }

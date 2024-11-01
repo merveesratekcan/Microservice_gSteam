@@ -9,6 +9,7 @@ namespace GameService.MappingProfile;
         public BaseMapper()
         {
             CreateMap<Category, CategoryDTO>().ReverseMap();
+            CreateMap<Game, GameDTO>().ReverseMap();
         }
         
     }

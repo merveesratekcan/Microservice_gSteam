@@ -2,6 +2,7 @@ using GameService.Base;
 using GameService.Data;
 using GameService.Repositories;
 using GameService.Repositories.ForCategory;
+using GameService.Services;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -18,6 +19,7 @@ builder.Services.AddDbContext<GameDbContext>(options =>{
 builder.Services.AddScoped(typeof(BaseResponseModel));
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IGameRepository, GameRepository>();
+builder.Services.AddScoped<IFileService, FileService>();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddEndpointsApiExplorer();

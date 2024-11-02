@@ -1,4 +1,5 @@
 using AutoMapper;
+using Contracts;
 using GameService.DTOs;
 using GameService.Entities;
 
@@ -10,6 +11,8 @@ namespace GameService.MappingProfile;
         {
             CreateMap<Category, CategoryDTO>().ReverseMap();
             CreateMap<Game, GameDTO>().ReverseMap();
+            CreateMap<GameDTO, GameCreated>().ReverseMap();
+            CreateMap<Game, GameCreated>().ReverseMap();
         }
         
     }

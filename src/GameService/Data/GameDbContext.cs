@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using GameService.Entities;
+using MassTransit;
 
 namespace GameService.Data
 {
@@ -15,6 +16,9 @@ namespace GameService.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.AddInboxStateEntity();
+            modelBuilder.AddOutboxMessageEntity();
+            modelBuilder.AddOutboxStateEntity();
         }
     }
 }

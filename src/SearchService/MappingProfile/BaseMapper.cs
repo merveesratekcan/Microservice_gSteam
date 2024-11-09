@@ -9,6 +9,7 @@ namespace SearchService.MappingProfile
         public BaseMapper()
         {
             CreateMap<GameItem,GameCreated>().ReverseMap();
+            CreateMap<GameItem,GameUpdated>().ReverseMap();
             
         }
     }

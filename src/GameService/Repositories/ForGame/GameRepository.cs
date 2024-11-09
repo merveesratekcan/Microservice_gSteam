@@ -81,6 +81,7 @@ public class GameRepository : IGameRepository
         if(game is not null)
         {
             _context.Games.Remove(game);
+            await _publishEndpoint.Publish<GameDeleted>(new {Id=gameId.ToString()});
             if(await _context.SaveChangesAsync() > 0){
                 _baseResponseModel.Data = game;
                 _baseResponseModel.IsSuccess=true;
@@ -104,6 +105,7 @@ public class GameRepository : IGameRepository
             game.MinimumSystemRequirement = gameDTO.MinimumSystemRequirement;
             game.RecommendedSystemRequirement = gameDTO.RecommendedSystemRequirement;
             //game.CategoryId = gameDTO.CategoryId;
+            await _publishEndpoint.Publish(_mapper.Map<GameUpdated>(game));
             if(await _context.SaveChangesAsync() > 0)
             {
                 _baseResponseModel.Data = game;

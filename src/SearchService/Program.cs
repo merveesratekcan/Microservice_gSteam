@@ -11,11 +11,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-builder.Services.AddMassTransit(x =>
+
+
+builder.Services.AddMassTransit(opt =>
 {
-    x.AddConsumersFromNamespaceContaining<GameCreatedConsumer>();
-    x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("search",false));
-    x.UsingRabbitMq((context, cfg) =>
+    opt.AddConsumersFromNamespaceContaining<GameCreatedConsumer>();
+
+    opt.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("search",false));
+    opt.UsingRabbitMq((context, cfg) =>
     {
         cfg.Host(builder.Configuration["RabbitMQ:Host"],"/" ,host =>
         {
@@ -57,4 +60,6 @@ app.Lifetime.ApplicationStarted.Register(async () =>
         throw;
     }
 });
+
+
 app.Run();

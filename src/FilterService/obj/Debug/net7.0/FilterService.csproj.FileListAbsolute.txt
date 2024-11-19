@@ -35,3 +35,13 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\obj\Debug\net7.0\re
 C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\obj\Debug\net7.0\FilterService.pdb
 C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\obj\Debug\net7.0\FilterService.genruntimeconfig.cache
 C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\obj\Debug\net7.0\ref\FilterService.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\Elastic.Clients.Elasticsearch.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\Elastic.Transport.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\MassTransit.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\MassTransit.Abstractions.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\MassTransit.RabbitMqTransport.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\Contracts.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\Contracts.pdb

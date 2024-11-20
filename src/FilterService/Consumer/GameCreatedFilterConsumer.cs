@@ -10,12 +10,16 @@ public class GameCreatedFilterConsumer : IConsumer<GameCreated>
 {
     private readonly  IMapper _mapper;
     private readonly ElasticsearchClient _elasticClient;
-    private const string IndexName = "filter_game";
+    
+    private readonly IConfiguration _configuration;
+    public string indexName;
 
-    public GameCreatedFilterConsumer(IMapper mapper, ElasticsearchClient elasticClient)
+    public GameCreatedFilterConsumer(IMapper mapper, ElasticsearchClient elasticClient, IConfiguration configuration)
     {
         _mapper = mapper;
         _elasticClient = elasticClient;
+        _configuration = configuration;
+        indexName = _configuration.GetValue<string>("IndexName");
     }
 
     public async Task Consume(ConsumeContext<GameCreated> context)
@@ -24,7 +28,7 @@ public class GameCreatedFilterConsumer : IConsumer<GameCreated>
         var objDTO = _mapper.Map<GameFilterItem>(context.Message);
         objDTO.GameId = context.Message.Id;
 
-        var elasticsearch = await _elasticClient.IndexAsync(objDTO,x=>x.Index(IndexName));
+        var elasticsearch = await _elasticClient.IndexAsync(objDTO,x=>x.Index(indexName));
         if (!elasticsearch.IsValidResponse)
         {
             Console.WriteLine("Consuming process is not valid");

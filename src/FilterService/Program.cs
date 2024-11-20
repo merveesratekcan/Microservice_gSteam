@@ -1,6 +1,7 @@
 using Contracts;
 using FilterService.Controller;
 using FilterService.Extensions;
+using FilterService.Services;
 using MassTransit;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddElastic(builder.Configuration);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddScoped<IFilterGameService, FilterGameService>();
 
 builder.Services.AddMassTransit(opt =>
 {

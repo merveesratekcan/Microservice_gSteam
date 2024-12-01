@@ -5,6 +5,7 @@ using GameService.Repositories;
 using GameService.Repositories.ForCategory;
 using GameService.Services;
 using MassTransit;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -49,6 +50,14 @@ builder.Services.AddMassTransit(x =>
     });
 });
 
+builder.Services.AddAuthentication (JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt=>{
+    opt.Authority = builder.Configuration["AuthorirtyServiceUrl"];
+    opt.RequireHttpsMetadata = false;
+    opt.TokenValidationParameters.ValidateAudience = false;
+    opt.TokenValidationParameters.NameClaimType = "name";
+});
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -60,6 +69,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

@@ -34,8 +34,16 @@ internal static class HostingExtensions
             .AddInMemoryIdentityResources(Config.IdentityResources)
             .AddInMemoryApiScopes(Config.ApiScopes)
             .AddInMemoryClients(Config.Clients)
-            .AddAspNetIdentity<ApplicationUser>();
-        
+            .AddAspNetIdentity<ApplicationUser>()
+            .AddProfileService<CustomProfileService>();
+            
+
+        //Cookieler aynı site içerisinde tek bir sefer çevrilebilir.
+        builder.Services.ConfigureApplicationCookie(options =>
+        {
+            options.Cookie.SameSite =SameSiteMode.Lax;
+        });
+
         builder.Services.AddAuthentication()
             .AddGoogle(options =>
             {

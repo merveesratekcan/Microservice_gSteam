@@ -38,7 +38,6 @@ public class CategoryController:ControllerBase
         return Ok(response);
     }
     [HttpGet]
-    [Authorize]
     public async Task<ActionResult> GetAllCategories()
     {
         var response = await _categoryRepository.GetAllCategories();

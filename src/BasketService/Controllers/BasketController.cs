@@ -23,12 +23,14 @@ public class BasketController : ControllerBase
         return Ok(response);
     }
     [HttpGet("BasketItems")]
+    
     public async Task<ActionResult> GetListItems()
     {
         var response = await _basketRepository.GetBasketItems();
         return Ok(response);
     }
     [HttpGet("BasketItem/{index}")]
+    [Authorize]
    // Eğer index gönderilirse, o indexe sahip olan ürünü döndürüyor.routedan çekmek için [FromRoute] kullanılır.
     public async Task<ActionResult> GetBasketItem([FromRoute]long index)
     {
@@ -36,6 +38,7 @@ public class BasketController : ControllerBase
         return Ok(response);
     }
     [HttpDelete("{index}")]
+    [Authorize]
     public async Task<ActionResult> RemoveItem([FromRoute]long index)
     {
         var response = await _basketRepository.RemoveBasketItem(index);

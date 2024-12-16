@@ -1,4 +1,5 @@
 using BasketService.Repository;
+using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,23 @@ builder.Services.AddSwaggerGen();
 //HttpContextAccessor, her istek için bir HttpContext nesnesi oluşturur.
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IBasketRepository, BasketRepository>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddMassTransit(x =>
+{
+    x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("basket",false));
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host(builder.Configuration["RabbitMQ:Host"],"/" ,host =>
+        {
+            host.Username(builder.Configuration.GetValue("RabbitMQ:Username", "guest"));
+            host.Password(builder.Configuration.GetValue("RabbitMQ:Password", "guest"));
+        });
+        cfg.ConfigureEndpoints(context);
+    });
+});
+
+
 builder.Services.AddAuthentication (JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt=>{
     opt.Authority = builder.Configuration["AuthorirtyServiceUrl"];
     opt.RequireHttpsMetadata = false;

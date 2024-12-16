@@ -38,6 +38,9 @@ builder.Services.AddMassTransit(x =>
         opt.UsePostgres();
         opt.UseBusOutbox();
     });
+
+    //yukarısı outbox design pattern için kullanılır.
+    
     x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("game",false));
     x.UsingRabbitMq((context, cfg) =>
     {

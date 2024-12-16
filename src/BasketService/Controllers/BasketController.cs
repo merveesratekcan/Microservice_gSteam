@@ -16,7 +16,7 @@ public class BasketController : ControllerBase
         _basketRepository = basketRepository;
     }
     [HttpPost]
-    [Authorize]
+    // [Authorize]
     public async Task<ActionResult> AddBasketItem(BasketModel model)
     {
         var response = await _basketRepository.AddBasket(model);
@@ -50,6 +50,13 @@ public class BasketController : ControllerBase
     //     var response = await _basketRepository.UpdateBasketItem(model, index);
     //     return Ok(response);
     // }
+    [HttpPost("Checkout")]
+    [Authorize]
+    public async Task<ActionResult> Checkout()
+    {
+        var response = await _basketRepository.Checkout();
+        return Ok(response);
+    }
 
    
 }

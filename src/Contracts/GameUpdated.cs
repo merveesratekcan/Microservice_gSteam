@@ -13,5 +13,4 @@ namespace Contracts;
     public string RecommendedSystemRequirement { get; set; }
     public Guid CategoryId { get; set; } 
 
-  
     }

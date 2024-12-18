@@ -72,7 +72,7 @@ namespace BasketService.Repository
                 {
                     await _publishEndpoint.Publish(_mapper.Map<CheckoutBasketModel>(item));
                 }
-               await _publishEndpoint.Publish(_mapper.Map<List<item>>(checkouts));
+               
                return responseModel;
             }
             responseModel.isSuccess=false;

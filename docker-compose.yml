@@ -57,7 +57,15 @@ services:
     volumes:
       - redis_valume_data:/data
     ports:
-      - 6379:6379 
+      - 6379:6379
+  mssql:
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Str0ngPass!123
+    restart: always
+    ports:
+      - "1444:1433"
 networks:
   es-net:
     driver: bridge

@@ -62,7 +62,7 @@ namespace BasketService.Repository
                 _checkout.GameAuthor=objResult.GameAuthor;
                 _checkout.Price=objResult.Price;
                 _checkout.GameDescription=objResult.GameDescription;
-                
+                _checkout.UserId=Guid.Parse(UserId);
                 checkouts.Add(_checkout);
             }
             if(checkouts.Count>0)

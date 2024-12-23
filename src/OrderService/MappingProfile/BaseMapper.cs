@@ -1,4 +1,7 @@
 using AutoMapper;
+using Contracts;
+using OrderService.Consumers;
+using OrderService.Entities;
 
 namespace OrderService.MappingProfile
 {
@@ -6,7 +9,7 @@ namespace OrderService.MappingProfile
     {
         public BaseMapper()
         {
-            
+            CreateMap<CheckoutBasketModel,Order>().ReverseMap();
         }
     }
 }

@@ -1,4 +1,6 @@
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
+using OrderService.Consumers;
 using OrderService.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +15,25 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 });
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddMassTransit(opt =>
+{
+    opt.AddConsumersFromNamespaceContaining<CheckoutBasketConsumer>();
+    opt.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("search",false));
+    opt.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host(builder.Configuration["RabbitMQ:Host"],"/" ,host =>
+        {
+            host.Username(builder.Configuration.GetValue("RabbitMQ:Username", "guest"));
+            host.Password(builder.Configuration.GetValue("RabbitMQ:Password", "guest"));
+        });
+        cfg.ReceiveEndpoint("order-created", e =>
+        {
+            e.UseMessageRetry(r => r.Interval(5, 5));
+            e.ConfigureConsumer<CheckoutBasketConsumer>(context);
+        });
+        cfg.ConfigureEndpoints(context);
+    });
+});
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();

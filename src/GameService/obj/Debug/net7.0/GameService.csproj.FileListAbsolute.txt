@@ -64,3 +64,10 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\Micr
 C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\Google.Protobuf.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\Grpc.AspNetCore.Server.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\Grpc.Core.Api.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\Grpc.Net.Client.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\Grpc.Net.ClientFactory.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\Grpc.Net.Common.dll

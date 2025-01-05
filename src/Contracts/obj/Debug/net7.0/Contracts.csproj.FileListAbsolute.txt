@@ -10,3 +10,4 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\Contracts\obj\Debug\net7.0\Contra
 C:\Users\esram\Desktop\Microservice_gSteam\src\Contracts\obj\Debug\net7.0\refint\Contracts.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\Contracts\obj\Debug\net7.0\Contracts.pdb
 C:\Users\esram\Desktop\Microservice_gSteam\src\Contracts\obj\Debug\net7.0\ref\Contracts.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\Contracts\obj\Debug\net7.0\Contracts.csproj.AssemblyReference.cache

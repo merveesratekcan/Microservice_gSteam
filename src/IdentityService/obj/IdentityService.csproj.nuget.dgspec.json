@@ -88,6 +88,10 @@
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[8.0.1, )"
             }
           },
           "imports": [

@@ -6,8 +6,9 @@ namespace DiscountService.Entities;
     {
         [Key]
         public int Id { get; set; }
-        public DateTime ExpireDate { get; set; }=DateTime.Now.AddDays(7);
+        public DateTime ExpireDate { get; set; }=DateTime.UtcNow.AddDays(7);
         public string CouponCode { get; set; }
+        public int DiscountAmount { get; set; }
         public string GameId { get; set; }
         public string UserId { get; set; }
     }

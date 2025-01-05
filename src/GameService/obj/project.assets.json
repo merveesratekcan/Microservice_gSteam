@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
+    "net8.0": {
       "AutoMapper/12.0.1": {
         "type": "package",
         "dependencies": {
@@ -49,7 +49,7 @@
           }
         }
       },
-      "Google.Protobuf/3.27.0": {
+      "Google.Protobuf/3.24.0": {
         "type": "package",
         "compile": {
           "lib/net5.0/Google.Protobuf.dll": {
@@ -62,32 +62,32 @@
           }
         }
       },
-      "Grpc.AspNetCore/2.67.0": {
+      "Grpc.AspNetCore/2.62.0": {
         "type": "package",
         "dependencies": {
-          "Google.Protobuf": "3.27.0",
-          "Grpc.AspNetCore.Server.ClientFactory": "2.67.0",
-          "Grpc.Tools": "2.67.0"
+          "Google.Protobuf": "3.24.0",
+          "Grpc.AspNetCore.Server.ClientFactory": "2.62.0",
+          "Grpc.Tools": "2.62.0"
         },
         "compile": {
-          "lib/net7.0/_._": {}
+          "lib/net8.0/_._": {}
         },
         "runtime": {
-          "lib/net7.0/_._": {}
+          "lib/net8.0/_._": {}
         }
       },
-      "Grpc.AspNetCore.Server/2.67.0": {
+      "Grpc.AspNetCore.Server/2.62.0": {
         "type": "package",
         "dependencies": {
-          "Grpc.Net.Common": "2.67.0"
+          "Grpc.Net.Common": "2.62.0"
         },
         "compile": {
-          "lib/net7.0/Grpc.AspNetCore.Server.dll": {
+          "lib/net8.0/Grpc.AspNetCore.Server.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net7.0/Grpc.AspNetCore.Server.dll": {
+          "lib/net8.0/Grpc.AspNetCore.Server.dll": {
             "related": ".pdb;.xml"
           }
         },
@@ -95,19 +95,19 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Grpc.AspNetCore.Server.ClientFactory/2.67.0": {
+      "Grpc.AspNetCore.Server.ClientFactory/2.62.0": {
         "type": "package",
         "dependencies": {
-          "Grpc.AspNetCore.Server": "2.67.0",
-          "Grpc.Net.ClientFactory": "2.67.0"
+          "Grpc.AspNetCore.Server": "2.62.0",
+          "Grpc.Net.ClientFactory": "2.62.0"
         },
         "compile": {
-          "lib/net7.0/Grpc.AspNetCore.Server.ClientFactory.dll": {
+          "lib/net8.0/Grpc.AspNetCore.Server.ClientFactory.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net7.0/Grpc.AspNetCore.Server.ClientFactory.dll": {
+          "lib/net8.0/Grpc.AspNetCore.Server.ClientFactory.dll": {
             "related": ".pdb;.xml"
           }
         },
@@ -115,7 +115,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Grpc.Core.Api/2.67.0": {
+      "Grpc.Core.Api/2.62.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/Grpc.Core.Api.dll": {
@@ -128,57 +128,57 @@
           }
         }
       },
-      "Grpc.Net.Client/2.67.0": {
+      "Grpc.Net.Client/2.62.0": {
         "type": "package",
         "dependencies": {
-          "Grpc.Net.Common": "2.67.0",
+          "Grpc.Net.Common": "2.62.0",
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
         },
         "compile": {
-          "lib/net7.0/Grpc.Net.Client.dll": {
+          "lib/net8.0/Grpc.Net.Client.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net7.0/Grpc.Net.Client.dll": {
+          "lib/net8.0/Grpc.Net.Client.dll": {
             "related": ".pdb;.xml"
           }
         }
       },
-      "Grpc.Net.ClientFactory/2.67.0": {
+      "Grpc.Net.ClientFactory/2.62.0": {
         "type": "package",
         "dependencies": {
-          "Grpc.Net.Client": "2.67.0",
+          "Grpc.Net.Client": "2.62.0",
           "Microsoft.Extensions.Http": "6.0.0"
         },
         "compile": {
-          "lib/net7.0/Grpc.Net.ClientFactory.dll": {
+          "lib/net8.0/Grpc.Net.ClientFactory.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net7.0/Grpc.Net.ClientFactory.dll": {
+          "lib/net8.0/Grpc.Net.ClientFactory.dll": {
             "related": ".pdb;.xml"
           }
         }
       },
-      "Grpc.Net.Common/2.67.0": {
+      "Grpc.Net.Common/2.62.0": {
         "type": "package",
         "dependencies": {
-          "Grpc.Core.Api": "2.67.0"
+          "Grpc.Core.Api": "2.62.0"
         },
         "compile": {
-          "lib/net7.0/Grpc.Net.Common.dll": {
+          "lib/net8.0/Grpc.Net.Common.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net7.0/Grpc.Net.Common.dll": {
+          "lib/net8.0/Grpc.Net.Common.dll": {
             "related": ".pdb;.xml"
           }
         }
       },
-      "Grpc.Tools/2.67.0": {
+      "Grpc.Tools/2.62.0": {
         "type": "package",
         "build": {
           "build/Grpc.Tools.props": {},
@@ -1341,6 +1341,22 @@
           "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
         }
       },
+      "System.IO.Pipelines/9.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "System.Linq/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1794,45 +1810,46 @@
           }
         }
       },
-      "System.Text.Encodings.Web/7.0.0": {
+      "System.Text.Encodings.Web/9.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.Text.Encodings.Web.dll": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.Text.Encodings.Web.dll": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/net8.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/browser/lib/net7.0/System.Text.Encodings.Web.dll": {
+          "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll": {
             "assetType": "runtime",
             "rid": "browser"
           }
         }
       },
-      "System.Text.Json/7.0.3": {
+      "System.Text.Json/9.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Text.Encodings.Web": "7.0.0"
+          "System.IO.Pipelines": "9.0.0",
+          "System.Text.Encodings.Web": "9.0.0"
         },
         "compile": {
-          "lib/net7.0/System.Text.Json.dll": {
+          "lib/net8.0/System.Text.Json.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.Text.Json.dll": {
+          "lib/net8.0/System.Text.Json.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/net6.0/System.Text.Json.targets": {}
+          "buildTransitive/net8.0/System.Text.Json.targets": {}
         }
       },
       "System.Text.RegularExpressions/4.3.1": {
@@ -1894,6 +1911,9 @@
       "Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.20"
+        },
         "compile": {
           "bin/placeholder/Contracts.dll": {}
         },
@@ -1952,14 +1972,14 @@
         "lib/netstandard2.0/CloudinaryDotNet.xml"
       ]
     },
-    "Google.Protobuf/3.27.0": {
-      "sha512": "tEaKpc+SP7I3gYW9AHozESyKkrCg8Xe7huI3Q3iUt5t8Dn29r2k1u8jyrGrD16maj/0UsQBM0MDViWEj0iynOA==",
+    "Google.Protobuf/3.24.0": {
+      "sha512": "5j/OBUVWPTeRYlG3Dm4PSupyU6nJmbnnhPeqjePzCqtzrh5vErx8dToStuhTnG1ZYZ+dawGziC7DN1I6FEQH0g==",
       "type": "package",
-      "path": "google.protobuf/3.27.0",
+      "path": "google.protobuf/3.24.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "google.protobuf.3.27.0.nupkg.sha512",
+        "google.protobuf.3.24.0.nupkg.sha512",
         "google.protobuf.nuspec",
         "lib/net45/Google.Protobuf.dll",
         "lib/net45/Google.Protobuf.pdb",
@@ -1975,32 +1995,31 @@
         "lib/netstandard2.0/Google.Protobuf.xml"
       ]
     },
-    "Grpc.AspNetCore/2.67.0": {
-      "sha512": "WjC3+Ri748j6IHYY73zwRPzJV0WFN97h9IkXrgcghk0WAgewDr03uUJzaSMC+qW1O7PcQNdUg3Pfb+73v0pxIQ==",
+    "Grpc.AspNetCore/2.62.0": {
+      "sha512": "DnfhwUepm1zlgIDuZkuvi7B7gugM2m8GOUlmyUxDaBviyfj/Of6+dIAR342QQwnBwPFeSboDZu9DJA/3TGVz0g==",
       "type": "package",
-      "path": "grpc.aspnetcore/2.67.0",
+      "path": "grpc.aspnetcore/2.62.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "grpc.aspnetcore.2.67.0.nupkg.sha512",
+        "grpc.aspnetcore.2.62.0.nupkg.sha512",
         "grpc.aspnetcore.nuspec",
         "lib/net6.0/_._",
         "lib/net7.0/_._",
         "lib/net8.0/_._",
-        "lib/net9.0/_._",
         "packageIcon.png"
       ]
     },
-    "Grpc.AspNetCore.Server/2.67.0": {
-      "sha512": "CDWB7GLhi4XN2Luw7gDbZQhGaMuMb9yDDwbBc9MMfmXFJvzALEK1hsbBaILzd8uDmX9E5VPMcqQ4mQyHvQ2HmA==",
+    "Grpc.AspNetCore.Server/2.62.0": {
+      "sha512": "0ZmdjQ3TxV2DT9tqldfWjVh3R51IdDjuc8vuUJRoJAU4M9sRGNJqJC72wxU81tQFeHLhe0ahq8FngFPuAvByrg==",
       "type": "package",
-      "path": "grpc.aspnetcore.server/2.67.0",
+      "path": "grpc.aspnetcore.server/2.62.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "grpc.aspnetcore.server.2.67.0.nupkg.sha512",
+        "grpc.aspnetcore.server.2.62.0.nupkg.sha512",
         "grpc.aspnetcore.server.nuspec",
         "lib/net6.0/Grpc.AspNetCore.Server.dll",
         "lib/net6.0/Grpc.AspNetCore.Server.pdb",
@@ -2011,20 +2030,17 @@
         "lib/net8.0/Grpc.AspNetCore.Server.dll",
         "lib/net8.0/Grpc.AspNetCore.Server.pdb",
         "lib/net8.0/Grpc.AspNetCore.Server.xml",
-        "lib/net9.0/Grpc.AspNetCore.Server.dll",
-        "lib/net9.0/Grpc.AspNetCore.Server.pdb",
-        "lib/net9.0/Grpc.AspNetCore.Server.xml",
         "packageIcon.png"
       ]
     },
-    "Grpc.AspNetCore.Server.ClientFactory/2.67.0": {
-      "sha512": "O5qaBd7T8yph5JHikA3lafYqsn+2QPM7Dwk0e/7HniiM4cIHpfdiBX5TSy/+5IIppZ27QeLYFgftK7QsG9uIkQ==",
+    "Grpc.AspNetCore.Server.ClientFactory/2.62.0": {
+      "sha512": "hJUzvFmfI4JgQEJMu+1IVaKg+zMlDiFNlmyW/2m2X/XUAKIaopx0hd3aaQ+hiWr6Ih5RHH5ZVx+1QgLqNPLdgw==",
       "type": "package",
-      "path": "grpc.aspnetcore.server.clientfactory/2.67.0",
+      "path": "grpc.aspnetcore.server.clientfactory/2.62.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "grpc.aspnetcore.server.clientfactory.2.67.0.nupkg.sha512",
+        "grpc.aspnetcore.server.clientfactory.2.62.0.nupkg.sha512",
         "grpc.aspnetcore.server.clientfactory.nuspec",
         "lib/net6.0/Grpc.AspNetCore.Server.ClientFactory.dll",
         "lib/net6.0/Grpc.AspNetCore.Server.ClientFactory.pdb",
@@ -2035,21 +2051,18 @@
         "lib/net8.0/Grpc.AspNetCore.Server.ClientFactory.dll",
         "lib/net8.0/Grpc.AspNetCore.Server.ClientFactory.pdb",
         "lib/net8.0/Grpc.AspNetCore.Server.ClientFactory.xml",
-        "lib/net9.0/Grpc.AspNetCore.Server.ClientFactory.dll",
-        "lib/net9.0/Grpc.AspNetCore.Server.ClientFactory.pdb",
-        "lib/net9.0/Grpc.AspNetCore.Server.ClientFactory.xml",
         "packageIcon.png"
       ]
     },
-    "Grpc.Core.Api/2.67.0": {
-      "sha512": "cL1/2f8kc8lsAGNdfCU25deedXVehhLA6GXKLLN4hAWx16XN7BmjYn3gFU+FBpir5yJynvDTHEypr3Tl0j7x/Q==",
+    "Grpc.Core.Api/2.62.0": {
+      "sha512": "q4Jj6bRZHNnE4CMLqgjiBUCKLit+tRr0simZsS2W6U++akd7CzXByeKy2tddqT68hFzP2XzceXA2YtBTfWtixA==",
       "type": "package",
-      "path": "grpc.core.api/2.67.0",
+      "path": "grpc.core.api/2.62.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "grpc.core.api.2.67.0.nupkg.sha512",
+        "grpc.core.api.2.62.0.nupkg.sha512",
         "grpc.core.api.nuspec",
         "lib/net462/Grpc.Core.Api.dll",
         "lib/net462/Grpc.Core.Api.pdb",
@@ -2063,15 +2076,15 @@
         "packageIcon.png"
       ]
     },
-    "Grpc.Net.Client/2.67.0": {
-      "sha512": "ofTjJQfegWkVlk5R4k/LlwpcucpsBzntygd4iAeuKd/eLMkmBWoXN+xcjYJ5IibAahRpIJU461jABZvT6E9dwA==",
+    "Grpc.Net.Client/2.62.0": {
+      "sha512": "C7HxLt+wWPTpPFORRHkxxtDLL+K/jXSmZBaPLhFM8AEkN0bYjklIfCwnzajn1gcbRcEETBb0WnRgHJdVzpwbCg==",
       "type": "package",
-      "path": "grpc.net.client/2.67.0",
+      "path": "grpc.net.client/2.62.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "grpc.net.client.2.67.0.nupkg.sha512",
+        "grpc.net.client.2.62.0.nupkg.sha512",
         "grpc.net.client.nuspec",
         "lib/net462/Grpc.Net.Client.dll",
         "lib/net462/Grpc.Net.Client.pdb",
@@ -2094,15 +2107,15 @@
         "packageIcon.png"
       ]
     },
-    "Grpc.Net.ClientFactory/2.67.0": {
-      "sha512": "owkRL6j8ZXvLnn8SsFGCRiWoe/2wGv+u+TASAylzUtGbHLnw7IiFRoeTs0IgpCNTETvlMLVb0gHDiLGo+mJZ6g==",
+    "Grpc.Net.ClientFactory/2.62.0": {
+      "sha512": "t0EbT6QHFBpc2OWMi5WdT8fKvn8OD6JDDlsL6VDHUC8kwIu7ouuW3JEJvEkdqD/25EUhWeBk6EISitAPK8NaFQ==",
       "type": "package",
-      "path": "grpc.net.clientfactory/2.67.0",
+      "path": "grpc.net.clientfactory/2.62.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "grpc.net.clientfactory.2.67.0.nupkg.sha512",
+        "grpc.net.clientfactory.2.62.0.nupkg.sha512",
         "grpc.net.clientfactory.nuspec",
         "lib/net6.0/Grpc.Net.ClientFactory.dll",
         "lib/net6.0/Grpc.Net.ClientFactory.pdb",
@@ -2122,14 +2135,14 @@
         "packageIcon.png"
       ]
     },
-    "Grpc.Net.Common/2.67.0": {
-      "sha512": "gazn1cD2Eol0/W5ZJRV4PYbNrxJ9oMs8pGYux5S9E4MymClvl7aqYSmpqgmWAUWvziRqK9K+yt3cjCMfQ3x/5A==",
+    "Grpc.Net.Common/2.62.0": {
+      "sha512": "eBv5I4RPWfdezGXqooU5hs3+XcfVMLk5XDlA4G/Nd9TMX78ZGrFl/lM1Ad187zgBLmH7WPAgfjKRWLBwaa1Wbw==",
       "type": "package",
-      "path": "grpc.net.common/2.67.0",
+      "path": "grpc.net.common/2.62.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "grpc.net.common.2.67.0.nupkg.sha512",
+        "grpc.net.common.2.62.0.nupkg.sha512",
         "grpc.net.common.nuspec",
         "lib/net6.0/Grpc.Net.Common.dll",
         "lib/net6.0/Grpc.Net.Common.pdb",
@@ -2149,10 +2162,10 @@
         "packageIcon.png"
       ]
     },
-    "Grpc.Tools/2.67.0": {
-      "sha512": "AQwGGe1dhCWlO72dTW4XtZBsvE9+mHt5rUpVOPjX9Q6sYZZ0GFyqs+7DjFeulaHKjsOg7Wteob1oq7a++SJWgA==",
+    "Grpc.Tools/2.62.0": {
+      "sha512": "tVU0hseOI3tYI9Z62++01EAUBNsKMQfZfeuZyW9Qa3z1D7IqtQKoU2u+3426uIPCTzVVi8qBgsszThyKam9NQA==",
       "type": "package",
-      "path": "grpc.tools/2.67.0",
+      "path": "grpc.tools/2.62.0",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -2181,7 +2194,7 @@
         "build/native/include/google/protobuf/timestamp.proto",
         "build/native/include/google/protobuf/type.proto",
         "build/native/include/google/protobuf/wrappers.proto",
-        "grpc.tools.2.67.0.nupkg.sha512",
+        "grpc.tools.2.62.0.nupkg.sha512",
         "grpc.tools.nuspec",
         "packageIcon.png",
         "tools/linux_arm64/grpc_csharp_plugin",
@@ -4397,6 +4410,34 @@
         "system.io.filesystem.primitives.nuspec"
       ]
     },
+    "System.IO.Pipelines/9.0.0": {
+      "sha512": "eA3cinogwaNB4jdjQHOP3Z3EuyiDII7MT35jgtnsA4vkn0LUrrSHsU0nzHTzFzmaFYeKV7MYyMxOocFzsBHpTw==",
+      "type": "package",
+      "path": "system.io.pipelines/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.IO.Pipelines.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.IO.Pipelines.targets",
+        "lib/net462/System.IO.Pipelines.dll",
+        "lib/net462/System.IO.Pipelines.xml",
+        "lib/net8.0/System.IO.Pipelines.dll",
+        "lib/net8.0/System.IO.Pipelines.xml",
+        "lib/net9.0/System.IO.Pipelines.dll",
+        "lib/net9.0/System.IO.Pipelines.xml",
+        "lib/netstandard2.0/System.IO.Pipelines.dll",
+        "lib/netstandard2.0/System.IO.Pipelines.xml",
+        "system.io.pipelines.9.0.0.nupkg.sha512",
+        "system.io.pipelines.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Linq/4.3.0": {
       "sha512": "5DbqIUpsDp0dFftytzuMmc0oeMdQwjcP/EWxsksIz/w1TcFRkZ3yKKz0PqiYFMmEwPSWw+qNVqD7PJ889JzHbw==",
       "type": "package",
@@ -5652,47 +5693,48 @@
         "system.text.encoding.nuspec"
       ]
     },
-    "System.Text.Encodings.Web/7.0.0": {
-      "sha512": "OP6umVGxc0Z0MvZQBVigj4/U31Pw72ITihDWP9WiWDm+q5aoe0GaJivsfYGq53o6dxH7DcXWiCTl7+0o2CGdmg==",
+    "System.Text.Encodings.Web/9.0.0": {
+      "sha512": "e2hMgAErLbKyUUwt18qSBf9T5Y+SFAL3ZedM8fLupkVj8Rj2PZ9oxQ37XX2LF8fTO1wNIxvKpihD7Of7D/NxZw==",
       "type": "package",
-      "path": "system.text.encodings.web/7.0.0",
+      "path": "system.text.encodings.web/9.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/System.Text.Encodings.Web.targets",
         "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Text.Encodings.Web.targets",
         "lib/net462/System.Text.Encodings.Web.dll",
         "lib/net462/System.Text.Encodings.Web.xml",
-        "lib/net6.0/System.Text.Encodings.Web.dll",
-        "lib/net6.0/System.Text.Encodings.Web.xml",
-        "lib/net7.0/System.Text.Encodings.Web.dll",
-        "lib/net7.0/System.Text.Encodings.Web.xml",
+        "lib/net8.0/System.Text.Encodings.Web.dll",
+        "lib/net8.0/System.Text.Encodings.Web.xml",
+        "lib/net9.0/System.Text.Encodings.Web.dll",
+        "lib/net9.0/System.Text.Encodings.Web.xml",
         "lib/netstandard2.0/System.Text.Encodings.Web.dll",
         "lib/netstandard2.0/System.Text.Encodings.Web.xml",
-        "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll",
-        "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.xml",
-        "runtimes/browser/lib/net7.0/System.Text.Encodings.Web.dll",
-        "runtimes/browser/lib/net7.0/System.Text.Encodings.Web.xml",
-        "system.text.encodings.web.7.0.0.nupkg.sha512",
+        "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll",
+        "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.xml",
+        "runtimes/browser/lib/net9.0/System.Text.Encodings.Web.dll",
+        "runtimes/browser/lib/net9.0/System.Text.Encodings.Web.xml",
+        "system.text.encodings.web.9.0.0.nupkg.sha512",
         "system.text.encodings.web.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Text.Json/7.0.3": {
-      "sha512": "AyjhwXN1zTFeIibHimfJn6eAsZ7rTBib79JQpzg8WAuR/HKDu9JGNHTuu3nbbXQ/bgI+U4z6HtZmCHNXB1QXrQ==",
+    "System.Text.Json/9.0.0": {
+      "sha512": "js7+qAu/9mQvnhA4EfGMZNEzXtJCDxgkgj8ohuxq/Qxv+R56G+ljefhiJHOxTNiw54q8vmABCWUwkMulNdlZ4A==",
       "type": "package",
-      "path": "system.text.json/7.0.3",
+      "path": "system.text.json/9.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
-        "README.md",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
         "analyzers/dotnet/roslyn3.11/cs/System.Text.Json.SourceGeneration.dll",
         "analyzers/dotnet/roslyn3.11/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
@@ -5738,18 +5780,18 @@
         "analyzers/dotnet/roslyn4.4/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
         "buildTransitive/net461/System.Text.Json.targets",
         "buildTransitive/net462/System.Text.Json.targets",
-        "buildTransitive/net6.0/System.Text.Json.targets",
+        "buildTransitive/net8.0/System.Text.Json.targets",
         "buildTransitive/netcoreapp2.0/System.Text.Json.targets",
         "buildTransitive/netstandard2.0/System.Text.Json.targets",
         "lib/net462/System.Text.Json.dll",
         "lib/net462/System.Text.Json.xml",
-        "lib/net6.0/System.Text.Json.dll",
-        "lib/net6.0/System.Text.Json.xml",
-        "lib/net7.0/System.Text.Json.dll",
-        "lib/net7.0/System.Text.Json.xml",
+        "lib/net8.0/System.Text.Json.dll",
+        "lib/net8.0/System.Text.Json.xml",
+        "lib/net9.0/System.Text.Json.dll",
+        "lib/net9.0/System.Text.Json.xml",
         "lib/netstandard2.0/System.Text.Json.dll",
         "lib/netstandard2.0/System.Text.Json.xml",
-        "system.text.json.7.0.3.nupkg.sha512",
+        "system.text.json.9.0.0.nupkg.sha512",
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -6013,12 +6055,13 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net7.0": [
+    "net8.0": [
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "CloudinaryDotNet >= 1.26.2",
       "Contracts >= 1.0.0",
-      "Grpc.AspNetCore >= 2.67.0",
+      "Grpc.AspNetCore >= 2.62.0",
+      "Grpc.Tools >= 2.62.0",
       "MassTransit.EntityFrameworkCore >= 8.0.16",
       "MassTransit.RabbitMQ >= 8.0.16",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.20",
@@ -6028,7 +6071,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.20",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.18",
       "Swashbuckle.AspNetCore >= 6.5.0",
-      "System.Text.Json >= 7.0.3"
+      "System.Text.Json >= 9.0.0"
     ]
   },
   "packageFolders": {
@@ -6056,7 +6099,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net8.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -6064,8 +6107,8 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {
             "C:\\Users\\esram\\Desktop\\Microservice_gSteam\\src\\Contracts\\Contracts.csproj": {
               "projectPath": "C:\\Users\\esram\\Desktop\\Microservice_gSteam\\src\\Contracts\\Contracts.csproj"
@@ -6086,8 +6129,8 @@
       "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "AutoMapper": {
             "target": "Package",
@@ -6103,7 +6146,11 @@
           },
           "Grpc.AspNetCore": {
             "target": "Package",
-            "version": "[2.67.0, )"
+            "version": "[2.62.0, )"
+          },
+          "Grpc.Tools": {
+            "target": "Package",
+            "version": "[2.62.0, )"
           },
           "MassTransit.EntityFrameworkCore": {
             "target": "Package",
@@ -6147,7 +6194,7 @@
           },
           "System.Text.Json": {
             "target": "Package",
-            "version": "[7.0.3, )"
+            "version": "[9.0.0, )"
           }
         },
         "imports": [
@@ -6169,20 +6216,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200-preview.0.24575.35\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200-preview.0.24575.35/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Text.Json' 7.0.3 has a known high severity vulnerability, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w",
-      "libraryId": "System.Text.Json",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  }
 }

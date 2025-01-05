@@ -7,6 +7,7 @@ using GameService.Services;
 using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -60,6 +61,8 @@ builder.Services.AddAuthentication (JwtBearerDefaults.AuthenticationScheme).AddJ
     opt.TokenValidationParameters.NameClaimType = "name";
 });
 
+builder.Services.AddGrpc();
+
 
 var app = builder.Build();
 
@@ -76,5 +79,5 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-// app.MapGrpcService<>();
+app.MapGrpcService<GrpcGameService>();
 app.Run();

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wCI+efws1gU=",
+  "dgSpecHash": "KEQvTHq2DMU=",
   "success": true,
   "projectFilePath": "C:\\Users\\esram\\Desktop\\Microservice_gSteam\\src\\BasketService\\BasketService.csproj",
   "expectedPackageFiles": [
@@ -61,7 +61,7 @@
       "message": "Package 'System.Text.Json' 6.0.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4",
       "libraryId": "System.Text.Json",
       "targetGraphs": [
-        "net7.0"
+        "net8.0"
       ]
     }
   ]

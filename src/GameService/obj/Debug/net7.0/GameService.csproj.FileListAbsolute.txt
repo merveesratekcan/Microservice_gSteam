@@ -71,3 +71,7 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\Grpc
 C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\Grpc.Net.Client.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\Grpc.Net.ClientFactory.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\Grpc.Net.Common.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\System.IO.Pipelines.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\System.Text.Encodings.Web.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net7.0\System.Text.Json.dll

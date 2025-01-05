@@ -10,6 +10,7 @@
         "dependencies": {
           "Google.Protobuf": "3.26.1",
           "Grpc.AspNetCore": "2.62.0",
+          "Grpc.Net.Client": "2.62.0",
           "Grpc.Tools": "2.62.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.20",
           "Microsoft.AspNetCore.OpenApi": "7.0.19",

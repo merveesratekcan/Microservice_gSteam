@@ -1,0 +1,3 @@
+obj\Debug\net8.0\protos/Discount.cs \
+obj\Debug\net8.0\protos/DiscountGrpc.cs: C:/Users/esram/.nuget/packages/grpc.tools/2.62.0/build/native/include/google/protobuf/timestamp.proto\
+ protos/discount.proto

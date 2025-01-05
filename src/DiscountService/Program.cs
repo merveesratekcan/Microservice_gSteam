@@ -27,6 +27,7 @@ builder.Services.AddAuthentication (JwtBearerDefaults.AuthenticationScheme).AddJ
     opt.TokenValidationParameters.NameClaimType = "name";
 });
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddGrpc();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -41,5 +42,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
+app.MapGrpcService<GrpcDiscountService>();
 app.Run();

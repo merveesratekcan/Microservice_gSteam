@@ -1,5 +1,6 @@
 using GameService.DTOs;
 using GameService.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GameService.Controllers
@@ -16,6 +17,7 @@ namespace GameService.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> CreateGame([FromForm]GameDTO gameDTO)
         {
             var response = await _gameRepository.CreateGame(gameDTO);

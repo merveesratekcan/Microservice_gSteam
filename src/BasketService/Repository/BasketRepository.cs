@@ -3,7 +3,9 @@ using AutoMapper;
 using BasketService.Base;
 using BasketService.Model;
 using Contracts;
+using DiscountService.Services;
 using MassTransit;
+using MassTransit.SagaStateMachine;
 using Newtonsoft.Json;
 using StackExchange.Redis;
 
@@ -16,12 +18,12 @@ namespace BasketService.Repository
         public string connectionString;
         public string UserId;
         //constructor her teiklendiğinde redis bağlantısı yapılır,
-
+        private readonly GrpcDiscountClient _grpcDiscountClient;
         //Masstrasit kullanarak event publish etmek için IPublishEndpoint kullanılır.Checkout işlemi gerçekleştiğinde bir event publish edilir.
         public IPublishEndpoint _publishEndpoint;
 
         private readonly IMapper _mapper;
-        public BasketRepository(IConfiguration configuration, IHttpContextAccessor httpContextAccessor, IPublishEndpoint publishEndpoint, IMapper mapper)
+        public BasketRepository(IConfiguration configuration, IHttpContextAccessor httpContextAccessor, IPublishEndpoint publishEndpoint, IMapper mapper, GrpcDiscountClient grpcDiscountClient)
         {
             connectionString = configuration.GetValue<string>("RedisDatabase");
             ConnectionMultiplexer redis = ConnectionMultiplexer.Connect(connectionString);
@@ -30,6 +32,7 @@ namespace BasketService.Repository
             UserId = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             _publishEndpoint = publishEndpoint;
             _mapper = mapper;
+            _grpcDiscountClient = grpcDiscountClient;
         }
 
 
@@ -128,13 +131,102 @@ namespace BasketService.Repository
             
         }
 
-        // public async Task<ResponseModel<bool>> UpdateBasketItem(long index, BasketModel model)
-        // {
-        //     ResponseModel<bool> responseModel=new ResponseModel<bool>();
-        //     var convertType = JsonConvert.SerializeObject(model);
-        //     await _db.ListSetByIndexAsync(UserId,index,convertType);
-        //     responseModel.isSuccess=true;
-        //     return responseModel;
-        // }
-    }
+        public  async Task<ResponseModel<bool>> ImplementCoupon(long index,string couponCode)
+        {
+            ResponseModel<bool> responseModel=new ResponseModel<bool>();
+            //grpc servisine bağlanarak coupon kodunu kontrol ederiz.Burada grpc devrede.
+            var discount= _grpcDiscountClient.GetDiscount(couponCode);
+            if(discount != null)
+            {
+                var response = await _db.ListGetByIndexAsync(UserId, index);
+                var deserilizeObj=JsonConvert.DeserializeObject<BasketModel>(response);
+                deserilizeObj.Price = deserilizeObj.Price-(deserilizeObj.Price * discount.DiscountAmount)/100;
+                //redise set methodu ile güncellenen objeyi set ederiz.
+                var serilizeObj=JsonConvert.SerializeObject(deserilizeObj);
+                await _db.ListSetByIndexAsync(UserId,index,serilizeObj);
+                responseModel.isSuccess=true;
+                return responseModel;
+            }
+            responseModel.isSuccess=false;
+            return responseModel;
+        }
+
+        //Bir kupon kudunun 1 kere kullanılmasını sağlamak için aşağıdaki kod bloğu yazılır.
+        public async Task<ResponseModel<bool>> CheckCouponCode(string couponCode)
+        {
+            try
+            {
+                if(!string.IsNullOrEmpty(couponCode))
+                {
+                    var response = await _db.StringGetAsync(couponCode);
+                    if(response.HasValue)
+                    {
+                        return new ResponseModel<bool>
+                        {
+                            isSuccess=false,
+                            Message="This coupon code has already been used"
+                        };
+                    }
+                   var key =  $"ImplementCoupon:{UserId}";
+                   var isCouponCode = await _db.SetContainsAsync(key,couponCode);
+                     if(isCouponCode)
+                     {
+                          return new ResponseModel<bool>
+                          {
+                            isSuccess=false,
+                            Message="This coupon code has already been used"
+                          };
+                     }
+                     var discount= _grpcDiscountClient.GetDiscount(couponCode);
+                     if(discount == null)
+                     {
+                         return new ResponseModel<bool>
+                         {
+                             isSuccess=false,
+                             Message="This coupon code is not valid"
+                         };
+                     }
+                     var values=await _db.ListLengthAsync(UserId);
+                     if(values == 0)
+                     {
+                         return new ResponseModel<bool>
+                         {
+                             isSuccess=false,
+                             Message="Please add a product to your basket"
+                         };
+                     }
+                     for(var index=0;index<values;index++)
+                     {
+                         var response2 = await _db.ListGetByIndexAsync(UserId, index);
+                         var ticket = JsonConvert.DeserializeObject<BasketModel>(response2);
+                         ticket!.Price = ticket.Price - (ticket.Price * discount.DiscountAmount) / 100;
+                         await _db.ListSetByIndexAsync(UserId, index, JsonConvert.SerializeObject(ticket));
+                         
+                     }
+                     await _db.SetAddAsync(key,couponCode);
+                     return new ResponseModel<bool>
+                     {
+                         isSuccess=true,
+                         Message="Coupon code has been successfully implemented"
+                     };
+                     
+                }
+                return new ResponseModel<bool>
+                {
+                    isSuccess=false,
+                    Message="Please enter a coupon code"
+                };
+            }
+                catch(Exception ex)
+                {
+                    return new ResponseModel<bool>
+                    {
+                        isSuccess=false,
+                        Message=ex.Message
+                    };
+                }
+            }
+        }
 }
+
+            

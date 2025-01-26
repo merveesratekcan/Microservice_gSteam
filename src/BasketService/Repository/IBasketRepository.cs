@@ -11,7 +11,7 @@ namespace BasketService.Repository;
         Task<ResponseModel<BasketModel>> GetBasketItem(long index);
         Task<ResponseModel<List<BasketModel>>> GetBasketItems();
         Task<ResponseModel<bool>> RemoveBasketItem(long index);
-        // Task<ResponseModel<BasketModel>> UpdateBasketItem(BasketModel model,long index);
+        Task<ResponseModel<bool>> ImplementCoupon(long index,string couponCode);
         Task<ResponseModel<bool>> Checkout();
 
     }

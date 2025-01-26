@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "KEQvTHq2DMU=",
+  "dgSpecHash": "CBxMp+1Oe7A=",
   "success": true,
   "projectFilePath": "C:\\Users\\esram\\Desktop\\Microservice_gSteam\\src\\BasketService\\BasketService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\esram\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\esram\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\esram\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",
+    "C:\\Users\\esram\\.nuget\\packages\\grpc.core.api\\2.62.0\\grpc.core.api.2.62.0.nupkg.sha512",
+    "C:\\Users\\esram\\.nuget\\packages\\grpc.net.client\\2.62.0\\grpc.net.client.2.62.0.nupkg.sha512",
+    "C:\\Users\\esram\\.nuget\\packages\\grpc.net.common\\2.62.0\\grpc.net.common.2.62.0.nupkg.sha512",
+    "C:\\Users\\esram\\.nuget\\packages\\grpc.tools\\2.62.0\\grpc.tools.2.62.0.nupkg.sha512",
     "C:\\Users\\esram\\.nuget\\packages\\masstransit\\8.0.16\\masstransit.8.0.16.nupkg.sha512",
     "C:\\Users\\esram\\.nuget\\packages\\masstransit.abstractions\\8.0.16\\masstransit.abstractions.8.0.16.nupkg.sha512",
     "C:\\Users\\esram\\.nuget\\packages\\masstransit.rabbitmq\\8.0.16\\masstransit.rabbitmq.8.0.16.nupkg.sha512",

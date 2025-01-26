@@ -65,6 +65,18 @@
               "target": "Package",
               "version": "[12.0.1, )"
             },
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.26.1, )"
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.62.0, )"
+            },
+            "Grpc.Tools": {
+              "target": "Package",
+              "version": "[2.62.0, )"
+            },
             "MassTransit.RabbitMQ": {
               "target": "Package",
               "version": "[8.0.16, )"

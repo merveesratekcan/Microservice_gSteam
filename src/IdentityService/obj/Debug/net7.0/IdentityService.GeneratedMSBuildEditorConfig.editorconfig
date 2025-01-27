@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dvdXRcTG9nZ2VkT3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/esram/Desktop/Microservice_gSteam/src/IdentityService/Pages/Account/Register/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZWdpc3RlclxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/esram/Desktop/Microservice_gSteam/src/IdentityService/Pages/Ciba/All.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2liYVxBbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

@@ -1399,7 +1399,7 @@
       },
       "Contracts/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
+        "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.20"
         },

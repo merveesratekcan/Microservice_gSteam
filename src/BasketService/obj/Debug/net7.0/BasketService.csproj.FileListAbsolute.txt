@@ -54,3 +54,7 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\BasketService\bin\Debug\net7.0\Ma
 C:\Users\esram\Desktop\Microservice_gSteam\src\BasketService\bin\Debug\net7.0\RabbitMQ.Client.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\BasketService\bin\Debug\net7.0\Contracts.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\BasketService\bin\Debug\net7.0\Contracts.pdb
+C:\Users\esram\Desktop\Microservice_gSteam\src\BasketService\bin\Debug\net7.0\Google.Protobuf.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\BasketService\bin\Debug\net7.0\Grpc.Core.Api.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\BasketService\bin\Debug\net7.0\Grpc.Net.Client.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\BasketService\bin\Debug\net7.0\Grpc.Net.Common.dll

@@ -86,3 +86,4 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net7.0\run
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net7.0\Contracts.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net7.0\Contracts.pdb
+C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

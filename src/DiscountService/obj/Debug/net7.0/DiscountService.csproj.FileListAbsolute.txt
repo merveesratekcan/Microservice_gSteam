@@ -49,3 +49,14 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net7.0\
 C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net7.0\System.CodeDom.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net7.0\Npgsql.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net7.0\Grpc.AspNetCore.Server.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net7.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net7.0\Grpc.Net.ClientFactory.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

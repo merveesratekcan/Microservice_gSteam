@@ -45,6 +45,10 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net8.0\Swas
 C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net8.0\Contracts.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net8.0\Contracts.pdb
 C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\obj\Debug\net8.0\GameService.csproj.AssemblyReference.cache
@@ -71,7 +75,3 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\obj\Debug\net8.0\refi
 C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\obj\Debug\net8.0\GameService.pdb
 C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\obj\Debug\net8.0\GameService.genruntimeconfig.cache
 C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\obj\Debug\net8.0\ref\GameService.dll
-C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net8.0\System.IO.Pipelines.dll
-C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net8.0\System.Text.Encodings.Web.dll
-C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net8.0\System.Text.Json.dll
-C:\Users\esram\Desktop\Microservice_gSteam\src\GameService\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll

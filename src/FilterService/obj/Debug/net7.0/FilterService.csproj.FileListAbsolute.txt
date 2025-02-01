@@ -45,3 +45,11 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\Ma
 C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\RabbitMQ.Client.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\Contracts.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\Contracts.pdb
+C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\FilterService\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

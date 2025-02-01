@@ -7,8 +7,11 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net8.0\
 C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net8.0\DiscountService.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net8.0\DiscountService.pdb
 C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net8.0\Grpc.Core.Api.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net8.0\Grpc.Net.Common.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net8.0\Humanizer.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -57,6 +60,3 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\obj\Debug\net8.0\
 C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\obj\Debug\net8.0\DiscountService.pdb
 C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\obj\Debug\net8.0\DiscountService.genruntimeconfig.cache
 C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\obj\Debug\net8.0\ref\DiscountService.dll
-C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
-C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
-C:\Users\esram\Desktop\Microservice_gSteam\src\DiscountService\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "ow9B2kASHHcEpSMpR6MABci64ySub9jqZu6pH0nz5BY=",
+  "Source": "FilterService",
+  "BasePath": "_content/FilterService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -59,7 +59,7 @@ builder.Services.AddAuthentication (JwtBearerDefaults.AuthenticationScheme).AddJ
     opt.Authority = builder.Configuration["AuthorirtyServiceUrl"];
     opt.RequireHttpsMetadata = false;
     opt.TokenValidationParameters.ValidateAudience = false;
-    opt.TokenValidationParameters.NameClaimType = "name";
+    opt.TokenValidationParameters.NameClaimType = "username";
 });
 
 builder.Services.AddGrpc();

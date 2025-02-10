@@ -165,15 +165,15 @@
           }
         }
       },
-      "System.IO.Hashing/7.0.0": {
+      "System.IO.Hashing/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.IO.Hashing.dll": {
+          "lib/net8.0/System.IO.Hashing.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.IO.Hashing.dll": {
+          "lib/net8.0/System.IO.Hashing.dll": {
             "related": ".xml"
           }
         },
@@ -249,10 +249,10 @@
           }
         }
       },
-      "Yarp.ReverseProxy/2.1.0": {
+      "Yarp.ReverseProxy/2.2.0": {
         "type": "package",
         "dependencies": {
-          "System.IO.Hashing": "7.0.0"
+          "System.IO.Hashing": "8.0.0"
         },
         "compile": {
           "lib/net8.0/Yarp.ReverseProxy.dll": {
@@ -545,15 +545,16 @@
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
-    "System.IO.Hashing/7.0.0": {
-      "sha512": "sDnWM0N3AMCa86LrKTWeF3BZLD2sgWyYUc7HL6z4+xyDZNQRwzmxbo4qP2rX2MqC+Sy1/gOSRDah5ltxY5jPxw==",
+    "System.IO.Hashing/8.0.0": {
+      "sha512": "ne1843evDugl0md7Fjzy6QjJrzsjh46ZKbhf8GwBXb5f/gw97J4bxMs0NQKifDuThh/f0bZ0e62NPl1jzTuRqA==",
       "type": "package",
-      "path": "system.io.hashing/7.0.0",
+      "path": "system.io.hashing/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/System.IO.Hashing.targets",
         "buildTransitive/net462/_._",
@@ -565,9 +566,11 @@
         "lib/net6.0/System.IO.Hashing.xml",
         "lib/net7.0/System.IO.Hashing.dll",
         "lib/net7.0/System.IO.Hashing.xml",
+        "lib/net8.0/System.IO.Hashing.dll",
+        "lib/net8.0/System.IO.Hashing.xml",
         "lib/netstandard2.0/System.IO.Hashing.dll",
         "lib/netstandard2.0/System.IO.Hashing.xml",
-        "system.io.hashing.7.0.0.nupkg.sha512",
+        "system.io.hashing.8.0.0.nupkg.sha512",
         "system.io.hashing.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -841,21 +844,22 @@
         "version.txt"
       ]
     },
-    "Yarp.ReverseProxy/2.1.0": {
-      "sha512": "VgRuCBxmh5ND4VuFhvIN3AAeoxFhYkS2hNINk6AVCrOVTlpk7OwdrTXi8NHACfqfhDL+/oYCZrF9RxN+yiYnEg==",
+    "Yarp.ReverseProxy/2.2.0": {
+      "sha512": "t16Z+OplJEElJy1Q6t12EwMGF2BeLw8IKjD1ema7ewbCRaMqeVIRPZo3MlxidnRFRK+tV6II8tKYX+7N5ZS98A==",
       "type": "package",
-      "path": "yarp.reverseproxy/2.1.0",
+      "path": "yarp.reverseproxy/2.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
+        "icon.png",
         "lib/net6.0/Yarp.ReverseProxy.dll",
         "lib/net6.0/Yarp.ReverseProxy.xml",
         "lib/net7.0/Yarp.ReverseProxy.dll",
         "lib/net7.0/Yarp.ReverseProxy.xml",
         "lib/net8.0/Yarp.ReverseProxy.dll",
         "lib/net8.0/Yarp.ReverseProxy.xml",
-        "yarp.reverseproxy.2.1.0.nupkg.sha512",
+        "yarp.reverseproxy.2.2.0.nupkg.sha512",
         "yarp.reverseproxy.nuspec"
       ]
     }
@@ -863,7 +867,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.20",
-      "Yarp.ReverseProxy >= 2.1.0"
+      "Yarp.ReverseProxy >= 2.2.0"
     ]
   },
   "packageFolders": {
@@ -912,7 +916,7 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
       "SdkAnalysisLevel": "9.0.200"
     },
@@ -926,7 +930,7 @@
           },
           "Yarp.ReverseProxy": {
             "target": "Package",
-            "version": "[2.1.0, )"
+            "version": "[2.2.0, )"
           }
         },
         "imports": [
@@ -948,7 +952,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200-preview.0.24575.35/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200-preview.0.25057.12/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

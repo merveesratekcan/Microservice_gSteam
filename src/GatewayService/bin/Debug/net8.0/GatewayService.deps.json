@@ -9,7 +9,7 @@
       "GatewayService/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.20",
-          "Yarp.ReverseProxy": "2.1.0"
+          "Yarp.ReverseProxy": "2.2.0"
         },
         "runtime": {
           "GatewayService.dll": {}
@@ -111,11 +111,11 @@
           }
         }
       },
-      "System.IO.Hashing/7.0.0": {
+      "System.IO.Hashing/8.0.0": {
         "runtime": {
-          "lib/net7.0/System.IO.Hashing.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.22.51805"
+          "lib/net8.0/System.IO.Hashing.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
           }
         }
       },
@@ -135,14 +135,14 @@
       },
       "System.Text.Encodings.Web/4.7.2": {},
       "System.Text.Json/4.7.2": {},
-      "Yarp.ReverseProxy/2.1.0": {
+      "Yarp.ReverseProxy/2.2.0": {
         "dependencies": {
-          "System.IO.Hashing": "7.0.0"
+          "System.IO.Hashing": "8.0.0"
         },
         "runtime": {
           "lib/net8.0/Yarp.ReverseProxy.dll": {
-            "assemblyVersion": "2.1.0.0",
-            "fileVersion": "2.100.23.56701"
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.200.24.42901"
           }
         }
       }
@@ -231,12 +231,12 @@
       "path": "system.identitymodel.tokens.jwt/6.35.0",
       "hashPath": "system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512"
     },
-    "System.IO.Hashing/7.0.0": {
+    "System.IO.Hashing/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-sDnWM0N3AMCa86LrKTWeF3BZLD2sgWyYUc7HL6z4+xyDZNQRwzmxbo4qP2rX2MqC+Sy1/gOSRDah5ltxY5jPxw==",
-      "path": "system.io.hashing/7.0.0",
-      "hashPath": "system.io.hashing.7.0.0.nupkg.sha512"
+      "sha512": "sha512-ne1843evDugl0md7Fjzy6QjJrzsjh46ZKbhf8GwBXb5f/gw97J4bxMs0NQKifDuThh/f0bZ0e62NPl1jzTuRqA==",
+      "path": "system.io.hashing/8.0.0",
+      "hashPath": "system.io.hashing.8.0.0.nupkg.sha512"
     },
     "System.Runtime/4.3.0": {
       "type": "package",
@@ -273,12 +273,12 @@
       "path": "system.text.json/4.7.2",
       "hashPath": "system.text.json.4.7.2.nupkg.sha512"
     },
-    "Yarp.ReverseProxy/2.1.0": {
+    "Yarp.ReverseProxy/2.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-VgRuCBxmh5ND4VuFhvIN3AAeoxFhYkS2hNINk6AVCrOVTlpk7OwdrTXi8NHACfqfhDL+/oYCZrF9RxN+yiYnEg==",
-      "path": "yarp.reverseproxy/2.1.0",
-      "hashPath": "yarp.reverseproxy.2.1.0.nupkg.sha512"
+      "sha512": "sha512-t16Z+OplJEElJy1Q6t12EwMGF2BeLw8IKjD1ema7ewbCRaMqeVIRPZo3MlxidnRFRK+tV6II8tKYX+7N5ZS98A==",
+      "path": "yarp.reverseproxy/2.2.0",
+      "hashPath": "yarp.reverseproxy.2.2.0.nupkg.sha512"
     }
   }
 }

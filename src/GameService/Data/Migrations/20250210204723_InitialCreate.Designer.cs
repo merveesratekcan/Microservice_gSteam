@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace GameService.Data.Migrations
 {
     [DbContext(typeof(GameDbContext))]
-    [Migration("20241102221658_InboxOutboxState")]
-    partial class InboxOutboxState
+    [Migration("20250210204723_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -73,6 +73,9 @@ namespace GameService.Data.Migrations
                         .HasColumnType("numeric");
 
                     b.Property<string>("RecommendedSystemRequirement")
+                        .HasColumnType("text");
+
+                    b.Property<string>("UserId")
                         .HasColumnType("text");
 
                     b.Property<string>("VideoUrl")

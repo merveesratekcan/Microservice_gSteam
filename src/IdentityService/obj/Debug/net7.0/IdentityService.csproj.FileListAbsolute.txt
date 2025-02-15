@@ -1,9 +1,0 @@
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\obj\Debug\net7.0\IdentityService.csproj.AssemblyReference.cache
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\obj\Debug\net7.0\IdentityService.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\obj\Debug\net7.0\IdentityService.AssemblyInfoInputs.cache
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\obj\Debug\net7.0\IdentityService.AssemblyInfo.cs
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\obj\Debug\net7.0\IdentityService.csproj.CoreCompileInputs.cache
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\obj\Debug\net7.0\IdentityService.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\obj\Debug\net7.0\IdentityService.RazorAssemblyInfo.cache
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\obj\Debug\net7.0\IdentityService.RazorAssemblyInfo.cs
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\obj\Debug\net7.0\IdentityService.sourcelink.json

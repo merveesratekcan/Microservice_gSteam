@@ -119,7 +119,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
-      - ConnectionStrings__MongoDbConnection=mongodb://root:mongopw@localhost:27017/?authSource=admin
+      - ConnectionStrings__MongoDbConnection=mongodb://root:mongopw@mongodb:27017/?authSource=admin
       - RabbitMq__Host=rabbitmq
     ports:
       - 8005:80

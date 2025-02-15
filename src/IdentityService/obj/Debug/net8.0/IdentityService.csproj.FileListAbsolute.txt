@@ -101,3 +101,4 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\System.Text.Encodings.Web.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\System.Text.Json.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\keys\is-signing-key-B62A4153A6DB468C470BA5E931135350.json

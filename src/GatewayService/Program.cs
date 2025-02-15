@@ -2,22 +2,19 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddReverseProxy()
-    .LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"));
+builder.Services.AddReverseProxy().LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"));
 
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(opt =>
-    {
-        opt.Authority = builder.Configuration["AuthorirtyServiceUrl"];
-        opt.RequireHttpsMetadata = false;
-        opt.TokenValidationParameters.ValidateAudience = false;
-        opt.TokenValidationParameters.NameClaimType = "username";
-    });
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options => {
+    options.Authority = builder.Configuration["AuthorirtyServiceUrl"];
+    options.RequireHttpsMetadata = false;
+    options.TokenValidationParameters.ValidateAudience = false;
+    options.TokenValidationParameters.NameClaimType = "username";
+});
 
 var app = builder.Build();
 
+app.MapGet("/", () => "Hello World!");
+app.MapReverseProxy();
 app.UseAuthentication();
 app.UseAuthorization();
-app.MapReverseProxy();
-
 app.Run();

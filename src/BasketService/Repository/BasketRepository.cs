@@ -73,9 +73,18 @@ namespace BasketService.Repository
                 responseModel.isSuccess=true;
                 foreach(var item in checkouts)
                 {
+                    try
+                    {
                     await _publishEndpoint.Publish(_mapper.Map<CheckoutBasketModel>(item));
+                    }
+                    catch (System.Exception ex)
+                    {
+                        
+                        throw ex;
+                    }                   
                 }
-               
+                await _db.KeyDeleteAsync(UserId);
+
                return responseModel;
             }
             responseModel.isSuccess=false;

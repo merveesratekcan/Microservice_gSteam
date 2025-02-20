@@ -65,7 +65,7 @@ services:
       - SA_PASSWORD=Str0ngPass!123
     restart: always
     ports:
-      - "1444:1433"
+      - "1433:1433"
   identity-svc:
     image: mymicroservice/identity-svc:latest
     build:
@@ -79,6 +79,21 @@ services:
       - postgres
     ports:
       - 5001:80
+  order-svc:
+    image: mymicroservice/order-svc:latest
+    build:
+      context: .
+      dockerfile: src/OrderService/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - ConnectionStrings__DefaultConnection=Server=mssql,1433;Database=Micorderservice_OrderDb;User Id=sa;Password=Str0ngPass!123;TrustServerCertificate=true
+      - RabbitMq__Host=rabbitmq
+    depends_on:
+      - mssql
+      - rabbitmq
+    ports:
+      - 8004:80
   gateway-svc:
     image: mymicroservice/gateway-svc:latest
     build:
@@ -132,6 +147,24 @@ services:
       - 8888:8888
     depends_on:
       - postgres
+  basket-svc:
+    image: mymicroservice/basket-svc:latest
+    build:
+      context: .
+      dockerfile: src/BasketService/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - RedisDatabase=redis
+      - RabbitMq__Host=rabbitmq
+      - AuthorirtyServiceUrl=http://identity-svc
+      - GrpcDiscount=http://discount-svc:8888
+    ports:
+      - 8001:80
+    depends_on:
+      - postgres
+      - redis
+      - rabbitmq
   search-svc:
     image: mymicroservice/search-svc:latest
     build:
@@ -146,6 +179,24 @@ services:
       - 8005:80
     depends_on:
       - mongodb
+      - rabbitmq 
+  filter-svc:
+    image: mymicroservice/filter-svc:latest
+    build:
+      context: .
+      dockerfile: src/FilterService/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - Elastic__Url=http://elasticsearch:9200
+      - ELASTIC_Username=elastic
+      - ELASTIC_Password=Admin123*
+      - indexName=filter_game
+      - RabbitMq__Host=rabbitmq
+    ports:
+      - 8002:80
+    depends_on:
+      - elasticsearch
       - rabbitmq 
 networks:
   es-net:

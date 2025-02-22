@@ -87,6 +87,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
+      - AuthorirtyServiceUrl=http://identity-svc
       - ConnectionStrings__DefaultConnection=Server=mssql,1433;Database=Micorderservice_OrderDb;User Id=sa;Password=Str0ngPass!123;TrustServerCertificate=true
       - RabbitMq__Host=rabbitmq
     depends_on:

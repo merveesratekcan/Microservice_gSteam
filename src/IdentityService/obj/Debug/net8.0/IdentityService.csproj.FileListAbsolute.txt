@@ -1,5 +1,6 @@
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\appsettings.json
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\keys\is-signing-key-4570B465AF5297152131295B840D4508.json
+C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\keys\is-signing-key-B62A4153A6DB468C470BA5E931135350.json
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\IdentityService.staticwebassets.runtime.json
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\IdentityService.staticwebassets.endpoints.json
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\IdentityService.exe
@@ -14,6 +15,7 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\IdentityModel.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
@@ -47,6 +49,13 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\runtimes\alpine-arm\native\libe_sqlite3.so
+C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\runtimes\alpine-arm64\native\libe_sqlite3.so
+C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\runtimes\linux-arm\native\libe_sqlite3.so
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\runtimes\linux-arm64\native\libe_sqlite3.so
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\runtimes\linux-armel\native\libe_sqlite3.so
@@ -66,6 +75,7 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\obj\Debug\net8.0\IdentityService.csproj.AssemblyReference.cache
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\obj\Debug\net8.0\IdentityService.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\obj\Debug\net8.0\IdentityService.AssemblyInfoInputs.cache
@@ -92,13 +102,3 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\obj\Debug\net8.0\
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\obj\Debug\net8.0\IdentityService.pdb
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\obj\Debug\net8.0\IdentityService.genruntimeconfig.cache
 C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\obj\Debug\net8.0\ref\IdentityService.dll
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\runtimes\alpine-arm\native\libe_sqlite3.so
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\runtimes\alpine-arm64\native\libe_sqlite3.so
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\runtimes\alpine-x64\native\libe_sqlite3.so
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\System.IO.Pipelines.dll
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\System.Text.Encodings.Web.dll
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\System.Text.Json.dll
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-C:\Users\esram\Desktop\Microservice_gSteam\src\IdentityService\bin\Debug\net8.0\keys\is-signing-key-B62A4153A6DB468C470BA5E931135350.json

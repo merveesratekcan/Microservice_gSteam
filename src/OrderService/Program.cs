@@ -1,7 +1,9 @@
 using MassTransit;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using OrderService.Consumers;
 using OrderService.Data;
+using OrderService.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +16,15 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddScoped<IPaymentService, PaymentService>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddAuthentication (JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt=>{
+    opt.Authority = builder.Configuration["AuthorirtyServiceUrl"];
+    opt.RequireHttpsMetadata = false;
+    opt.TokenValidationParameters.ValidateAudience = false;
+    opt.TokenValidationParameters.NameClaimType = "username";
+});
 builder.Services.AddMassTransit(opt =>
 {
     opt.AddConsumersFromNamespaceContaining<CheckoutBasketConsumer>();
@@ -46,6 +56,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseAuthentication();
 
 app.UseAuthorization();
 

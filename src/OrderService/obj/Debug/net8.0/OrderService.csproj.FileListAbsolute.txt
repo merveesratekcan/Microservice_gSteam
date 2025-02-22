@@ -1,3 +1,11 @@
+C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\OrderService.csproj.AssemblyReference.cache
+C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\OrderService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\OrderService.AssemblyInfoInputs.cache
+C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\OrderService.AssemblyInfo.cs
+C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\OrderService.csproj.CoreCompileInputs.cache
+C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\OrderService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\OrderService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\OrderService.sourcelink.json
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\appsettings.json
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\OrderService.staticwebassets.endpoints.json
@@ -11,6 +19,7 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\Aut
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\Humanizer.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\Iyzipay.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\MassTransit.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\MassTransit.Abstractions.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\MassTransit.RabbitMqTransport.dll
@@ -36,6 +45,7 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\Mic
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\RabbitMQ.Client.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -63,14 +73,6 @@ C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\run
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\Contracts.dll
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\bin\Debug\net8.0\Contracts.pdb
-C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\OrderService.csproj.AssemblyReference.cache
-C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\OrderService.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\OrderService.AssemblyInfoInputs.cache
-C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\OrderService.AssemblyInfo.cs
-C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\OrderService.csproj.CoreCompileInputs.cache
-C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\OrderService.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\OrderService.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\OrderService.sourcelink.json
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\scopedcss\bundle\OrderService.styles.css
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\esram\Desktop\Microservice_gSteam\src\OrderService\obj\Debug\net8.0\staticwebassets.development.json

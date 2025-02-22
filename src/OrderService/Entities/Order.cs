@@ -12,5 +12,6 @@ public class Order
     public decimal Price { get; set; }
     public string GameDescription { get; set; }   
     public Guid UserId { get; set; }  
+    public bool IsPaid { get; set; }=false;
 
 }

@@ -42,6 +42,9 @@ namespace OrderService.Data.Migrations
                     b.Property<string>("GameName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsPaid")
+                        .HasColumnType("bit");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 

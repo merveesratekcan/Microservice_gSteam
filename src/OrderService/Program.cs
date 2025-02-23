@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using OrderService.Consumers;
 using OrderService.Data;
 using OrderService.Services;
+using OrderService.Services.GrpcFolder;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -44,6 +45,8 @@ builder.Services.AddMassTransit(opt =>
         cfg.ConfigureEndpoints(context);
     });
 });
+
+builder.Services.AddScoped<GrpcMyGameClient>();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();

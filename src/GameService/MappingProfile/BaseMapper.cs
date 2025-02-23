@@ -14,6 +14,7 @@ namespace GameService.MappingProfile;
             CreateMap<GameDTO, GameCreated>().ReverseMap();
             CreateMap<Game, GameCreated>().ReverseMap();
             CreateMap<Game, GameUpdated>().ReverseMap();
+            CreateMap<MyGame,MyGameDTO>().ReverseMap();
 
         }
         

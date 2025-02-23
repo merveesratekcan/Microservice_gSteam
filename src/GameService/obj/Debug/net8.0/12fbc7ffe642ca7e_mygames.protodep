@@ -1,0 +1,2 @@
+obj\Debug\net8.0\protos/Mygames.cs \
+obj\Debug\net8.0\protos/MygamesGrpc.cs: protos/mygames.proto

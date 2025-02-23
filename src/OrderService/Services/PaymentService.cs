@@ -10,21 +10,26 @@ using Microsoft.EntityFrameworkCore;
 using OrderService.Data;
 using OrderService.Entities;
 using OrderService.Models;
+using OrderService.Services.GrpcFolder;
+
 
 namespace OrderService.Services;
 
     public class PaymentService : IPaymentService
     {
         private readonly ApplicationDbContext _context;
-
+        private readonly GrpcMyGameClient _myGameClient;
         private string UserId;
 
-    public PaymentService(IConfiguration _configuration, IHttpContextAccessor _contextAccessor, ApplicationDbContext context)
+    public PaymentService(IConfiguration _configuration, IHttpContextAccessor _contextAccessor, ApplicationDbContext context, GrpcMyGameClient myGameClient)
     {
-        
+
         UserId = _contextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         _context = context;
+        _myGameClient = myGameClient;
     }
+
+    public GrpcMyGameClient MyGameClient => _myGameClient;
 
     public async Task<bool> PayMyGames(PaymentForm model)
         {
@@ -113,7 +118,18 @@ namespace OrderService.Services;
             Payment payment = Payment.Create(request, options);
             if (payment.Status == "success")
             {
+                foreach (var item in result)
+                {
+                    var isPaid= await PaidGameOrder(result);
+                    var checkResult= _myGameClient.SaveMyGame(UserId, item.GameId.ToString());
+                    if (!checkResult || !isPaid)
+                    {
+                        return false;
+                    }
+                   
+                }
                 return true;
+                
             }
             return false;
        }

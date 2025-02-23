@@ -66,6 +66,8 @@ services:
     restart: always
     ports:
       - "1433:1433"
+    volumes:
+      - mssql_volume_data:/var/opt/mssql
   identity-svc:
     image: mymicroservice/identity-svc:latest
     build:
@@ -90,6 +92,7 @@ services:
       - AuthorirtyServiceUrl=http://identity-svc
       - ConnectionStrings__DefaultConnection=Server=mssql,1433;Database=Micorderservice_OrderDb;User Id=sa;Password=Str0ngPass!123;TrustServerCertificate=true
       - RabbitMq__Host=rabbitmq
+      - GrpcGame=http://game-svc:9999
     depends_on:
       - mssql
       - rabbitmq
@@ -208,4 +211,5 @@ volumes:
   elasticsearch-data:
   kibana-data:
   redis_valume_data:
+  mssql_volume_data:
    

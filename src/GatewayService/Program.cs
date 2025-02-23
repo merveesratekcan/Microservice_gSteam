@@ -14,7 +14,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 var app = builder.Build();
 
 app.MapGet("/", () => "Hello World!");
-app.MapReverseProxy();
+
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.MapReverseProxy();
 app.Run();
